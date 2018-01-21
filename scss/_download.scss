@@ -28,3 +28,41 @@ section.download {
         }
     }
 }
+.gift-card-holder {
+  max-width:500px;
+  display:block;
+  position:relative;
+  margin-top: 70px;
+  .gift-card{
+    &.c-100{
+        position:absolute; 
+       z-index:2;
+           box-shadow: 1px 1px darkslategrey;
+    }
+    &.c-50{
+      transform: rotate(10deg) translateX(-10px) translateY(-20px);
+      &:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,255,255, 0.5);
+  transition: all .3s linear;
+}
+    }
+    
+    width:100%;
+    border-radius:20px;
+  }    
+}
+
+.bg-primary.gift-card-section {
+    background:#333!important;
+    color:#fff;
+    p{
+    color:#e4e4e4;
+    }
+}
