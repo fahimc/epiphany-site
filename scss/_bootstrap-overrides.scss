@@ -1,6 +1,6 @@
 // Bootstrap overrides for this template
 .bg-primary {
-    background:#dc3545;
+    background: #dc3545;
     background: -webkit-linear-gradient(#dc3545, darken(#dc3545, 5%));
     background: linear-gradient(#dc3545, darken(#dc3545, 5%));
 }
@@ -9,7 +9,7 @@
     color: $theme-primary;
 }
 
-.no-gutter > [class*='col-'] {
+.no-gutter>[class*='col-'] {
     padding-right: 0;
     padding-left: 0;
 }
@@ -37,6 +37,13 @@
     font-size: 11px;
     padding: 15px 45px;
 }
+
 #mainNav .navbar-brand {
     font-family: 'Raleway', sans-serif;
+}
+
+.row {
+    max-width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
 }

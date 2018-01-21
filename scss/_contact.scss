@@ -1,6 +1,10 @@
 // Styling for the download section
 section.contact {
     text-align: center;
+    color: white;
+    background: url('../img/bg-pattern.png'), $theme-secondary;
+    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary); //: url('../img/bg-pattern.png'), linear-gradient(to left, #00a2dd, #6162ac);
+    background: url('../img/bg-pattern.png'), linear-gradient(to left, #000, #6162ac); //background: url('../img/bg-pattern.png'), linear-gradient(to left, #474747,#5f5f5f);
     h2 {
         margin-top: 0;
         margin-bottom: 25px;

@@ -15,9 +15,15 @@ section.cta {
             margin-bottom: 25px;
             color: white;
         }
+        p {
+            color: #e4e4e4;
+        }
         @media (min-width: 768px) {
             h2 {
                 font-size: 80px;
+            }
+            p {
+                width: 50%
             }
         }
     }

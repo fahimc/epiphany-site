@@ -4,6 +4,8 @@
     background-color: transparent;
     @include transition-all;
     @include heading-font;
+    max-width: 100vw;
+    text-shadow: 1px 1px #333;
     .navbar-brand {
         color: white;
         @include heading-font;
@@ -11,18 +13,24 @@
         &:focus {
             color: darken($theme-primary, 10%);
         }
+        .logo{
+            width: 20px;
+            margin-right: 5px;
+        }
     }
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
         color: #fff;
         margin-right: 20px;
+        text-shadow: 1px 1px grey;
     }
     .navbar-nav {
         >li {
             >a {
                 font-size: 11px;
                 @include alt-font;
+                color: #fff;
                 &.active {
                     color: $theme-primary !important;
                     background-color: transparent;
@@ -33,7 +41,7 @@
             }
             >a,
             >a:focus {
-                color: $gray-darker;
+                color: #fff;
                 &:hover {
                     color: $theme-primary;
                 }
@@ -69,7 +77,7 @@
             }
             .navbar-nav>li>a,
             .navbar-nav>li>a:focus {
-                color: $gray-darker;
+                color: #fff;
                 &:hover {
                     color: $theme-primary;
                 }

@@ -1,0 +1,41 @@
+.gift-card-section {
+
+    .gift-card-holder {
+        max-width: 500px;
+        display: block;
+        position: relative;
+        margin-top: 70px;
+        margin: auto;
+        .gift-card {
+            &.c-100 {
+                position: absolute;
+                z-index: 2;
+                box-shadow: 1px 1px darkslategrey;
+            }
+            &.c-50 {
+                transform: rotate(10deg) translateX(20%) translateY(-30px);
+                opacity: 0.9;
+                &:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 255, 255, 0.5);
+                    transition: all .3s linear;
+                }
+            }
+
+            width:80%;
+            margin: auto; //border-radius:20px;
+        }
+    }
+
+    background: #333!important;
+    color: #fff;
+    p {
+        color: #e4e4e4;
+    }
+}
