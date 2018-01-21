@@ -113,3 +113,17 @@ gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() 
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('js/**/*.js', browserSync.reload);
 });
+
+gulp.task('dist', function() {
+  gulp.src([
+      'css/**',
+      'js/**',
+      'vendor/**',
+      'img/**',
+      'device-mockups/**',
+      'index.html',
+    ],{
+"base" : "./"
+})
+    .pipe(gulp.dest('dist'))
+  });
