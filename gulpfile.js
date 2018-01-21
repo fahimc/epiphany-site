@@ -122,6 +122,9 @@ gulp.task('dist', function() {
       'img/**',
       'device-mockups/**',
       'index.html',
+      'favicon.ico',
+      'manifest.json',
+      'browserconfig.xml',
     ],{
 "base" : "./"
 })
