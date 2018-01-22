@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <!-- This exposes the library as a global variable: ethers -->
+<script src="https://cdn.ethers.io/scripts/ethers-v2.0.min.js" type="text/javascript">
+</script>
+</head>
+<body>
+<script type="text/javascript">
+var providers= ethers.providers;
+  var network = 'rinkeby';
+  var etherscanProvider = new providers.EtherscanProvider(network);
+  var Wallet = ethers.Wallet;
+ // var privateKey = "0xc876c481add221e551f6420bc1e6be6a3b28004691a279ea8613fc54a031db25";
+//var wallet = new Wallet(privateKey,etherscanProvider);
+//var balancePromise = wallet.getBalance(wallet.address);
+var address = "0xeDDf29Fa1fb8ADcbaCF1Ef3691604Bdb65341Ac6";
+
+etherscanProvider.getBalance(address).then(function(balance) {
+
+    // balance is a BigNumber (in wei); format is as a sting (in ether)
+    var etherString = ethers.utils.formatEther(balance);
+
+    console.log("Balance: " + etherString);
+});
+
+</script>
+</body>
+</html>
