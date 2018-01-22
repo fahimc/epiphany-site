@@ -481,9 +481,19 @@ var abi = [
   }
 ]
 var contract = new ethers.Contract('0xb16B425FD68E3a87bfF2226b7092Bd1e00053e9e',abi,etherscanProvider);
+ //signer = etherscanProvider.getSigner();
 var utils = ethers.utils;
 contract.totalSupply().then((data)=>{
 console.log('here',data[0].toString());
   
 });
-contract.sellPrice(utils.bigNumberify(0.5));
+contract.balanceOf('0xeDDf29Fa1fb8ADcbaCF1Ef3691604Bdb65341Ac6').then((data)=>{
+console.log('balance of',data[0].toString());
+  
+});
+
+contract.setPrices(utils.parseEther("0.001"),utils.parseEther("0.001")).then((data)=>{
+console.log('price',data);
+  
+});
+console.log(etherscanProvider)
