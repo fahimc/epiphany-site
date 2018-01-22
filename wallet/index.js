@@ -486,4 +486,4 @@ contract.totalSupply().then((data)=>{
 console.log('here',data[0].toString());
   
 });
-contract.sellPrice(utils.bigNumberify.add(0.5));
+contract.sellPrice(utils.bigNumberify(0.5));
