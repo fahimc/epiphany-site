@@ -276,19 +276,25 @@ section.features {
   order: 1; }
 
 .demo-card:nth-child(2) {
-  order: 4; }
+  order: 6; }
 
 .demo-card:nth-child(3) {
   order: 2; }
 
 .demo-card:nth-child(4) {
-  order: 5; }
+  order: 7; }
 
 .demo-card:nth-child(5) {
   order: 3; }
 
 .demo-card:nth-child(6) {
-  order: 6; }
+  order: 8; }
+
+.demo-card:nth-child(7) {
+  order: 4; }
+
+.demo-card:nth-child(8) {
+  order: 9; }
 
 #roadmap {
   padding: 100px 0;
@@ -315,7 +321,7 @@ section.features {
         display: flex;
         flex-flow: column wrap;
         width: 1170px;
-        height: 1650px;
+        height: 2140px;
         margin: 0 auto; } }
     #roadmap .demo-card-wrapper::after {
       z-index: 1;
@@ -436,6 +442,18 @@ section.features {
       background-color: #46b8e9; }
       #roadmap .demo-card--step5 .head::after {
         border-color: #46b8e9; }
+    #roadmap .demo-card--step6 {
+      background-color: #3ee9d1; }
+      #roadmap .demo-card--step6 .head::after {
+        border-color: #3ee9d1; }
+    #roadmap .demo-card--step7 {
+      background-color: #ce43eb; }
+      #roadmap .demo-card--step7 .head::after {
+        border-color: #ce43eb; }
+    #roadmap .demo-card--step8 {
+      background-color: #4d92eb; }
+      #roadmap .demo-card--step8 .head::after {
+        border-color: #4d92eb; }
 
 section.cta {
   position: relative;
